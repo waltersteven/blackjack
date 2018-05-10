@@ -74,31 +74,72 @@ class ViewController: UIViewController, OnTapDelegate {
         
     }
     
+    @IBAction func stayButton(_ sender: UIButton) {
+        
+        calculateWinner()
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func onTapDelegate(validTap: Bool, score: Int, turn: Int) {
-        
+    
         if validTap {
             warning.isHidden = true
             cardsManager.calculateScore(score: score, turn: turn)
-            let actualTurn = cardsManager.changeTurn()
             
-            for card in tableCards {
-                card.actualTurn = actualTurn
+            if cardsManager.playerScore == 21 {
+                warning.text = "Ganó el jugador"
+                warning.isHidden = false
+                
+            } else if cardsManager.playerScore > 21 {
+                warning.text = "Ganó la mesa"
+                warning.isHidden = false
             }
-            for card in playerCards {
-                card.actualTurn = actualTurn
-            }
+            
         } else {
-            warning.text = "No es tu turno"
+            
+            warning.text = "No puedes tocar una baraja que no sea tuya"
             warning.isHidden = false
+            
         }
         
-
+        //checking if playerCards has it´s all elements revealed
+        let fullTaps = playerCards.contains { $0.faceUp == false }
+        print(fullTaps)
+        if fullTaps == false {
+            calculateWinner()
+        }
+    }
+    
+    func calculateWinner() {
+        for card in tableCards {
+            if card.faceUp == false {
+                card.faceUp = true
+                cardsManager.calculateScore(score: card.number!, turn: card.turn!)
+                
+            }
+        }
+        
+        if cardsManager.tableScore == 21 {
+            warning.text = "Ganó la mesa"
+            warning.isHidden = false
+            
+        } else if cardsManager.tableScore > 21 {
+            warning.text = "Ganó el jugador"
+            warning.isHidden = false
+        } else {
+            if cardsManager.tableScore > cardsManager.playerScore {
+                warning.text = "Ganó la mesa"
+                warning.isHidden = false
+            }else {
+                warning.text = "Ganó el jugador"
+                warning.isHidden = false
+            }
+        }
     }
     
 }
-
