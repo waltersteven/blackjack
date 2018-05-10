@@ -46,40 +46,6 @@ struct CardsManager {
         print(playerScore)
     }
     
-    mutating func checkWinner() -> String {
-//        if playerScore <= 21 {
-//            if playerScore > tableScore {
-//                return "jugador"
-//            } else{
-//                 return "mesa"
-//            }
-//        }else if tableScore <= 21 {
-//            if tableScore > playerScore {
-//                return "mesa"
-//            }else {
-//                 return "jugador"
-//            }
-//        }else {
-//            return "empate"
-//        }
-        
-        if tableScore <= 21 && tableScore > playerScore {
-                return "mesa"
-        } else if tableScore > 21 {
-            return "player"
-        }
-        
-        if playerScore <= 21 && playerScore > tableScore {
-            return "player"
-        } else if playerScore > 21 {
-            return "mesa"
-        }else{
-            return "empate"
-        }
-
-        
-    }
-    
     mutating func changeTurn() -> Int {
         if actualTurn == 2 {
             actualTurn = 1
