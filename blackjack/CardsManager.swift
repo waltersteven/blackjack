@@ -15,7 +15,7 @@ class Card {
     var number : Int
     var turn: Int
     var actualTurn: Int
-    var faceUp: Bool
+    var	 faceUp: Bool
     
     init(palo: String, number: Int, back: String, turn: Int, faceUp: Bool) {
         self.palo = palo

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.847581"
+            timestampString = "547774457.22024"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.8479871"
+            timestampString = "547774457.2206171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.848302"
+            timestampString = "547774457.22086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.8486021"
+            timestampString = "547774457.221092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.848883"
+            timestampString = "547774457.221328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.84916"
+            timestampString = "547774457.221554"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.849442"
+            timestampString = "547774457.221784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.849713"
+            timestampString = "547774457.222012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.849956"
+            timestampString = "547774457.222252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.850263"
+            timestampString = "547774457.222472"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.850528"
+            timestampString = "547774457.222697"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.850807"
+            timestampString = "547774457.222921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.851053"
+            timestampString = "547774457.223199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.851313"
+            timestampString = "547774457.223442"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.851571"
+            timestampString = "547774457.223683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.8518161"
+            timestampString = "547774457.223917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.852071"
+            timestampString = "547774457.224143"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.852358"
+            timestampString = "547774457.2243969"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.852595"
+            timestampString = "547774457.224669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.8528579"
+            timestampString = "547774457.224964"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.853176"
+            timestampString = "547774457.22524"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.853482"
+            timestampString = "547774457.225508"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.85387"
+            timestampString = "547774457.225771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.854306"
+            timestampString = "547774457.226043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.854829"
+            timestampString = "547774457.226349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.855248"
+            timestampString = "547774457.226642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.8557791"
+            timestampString = "547774457.22693"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "blackjack/ViewController.swift"
-            timestampString = "547744539.8562469"
+            timestampString = "547774457.227216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "calculateWinner()"
             landmarkType = "7">
          </BreakpointContent>
