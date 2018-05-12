@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, OnTapDelegate {
     var cardsManager = CardsManager()
+    var animator: UIViewPropertyAnimator!
     var activePlayer: String = "player"
     
     var objCard: Card!
@@ -17,27 +18,39 @@ class ViewController: UIViewController, OnTapDelegate {
     @IBOutlet var tableCards: [CardView]!
     @IBOutlet var playerCards: [CardView]!
     @IBOutlet weak var warning: UILabel!
+    @IBOutlet weak var stay: UIButton!
+    @IBOutlet weak var reload: UIButton!
     
-    @IBAction func reload(_ sender: UIButton) {
+    @IBAction func reloadButton(_ sender: UIButton) {
         warning.isHidden = true
+        
         cardsManager.tableScore = 0
         cardsManager.playerScore = 0
         cardsManager.actualTurn = 2
+        
+        deckAnimation(deck: tableCards)
+        deckAnimation(deck: playerCards)
+        
         createCard(deck: tableCards, back: "mesa", turn: 1)
         createCard(deck: playerCards, back: "jugador", turn: 2)
         
         initialChecking()
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        deckAnimation(deck: tableCards)
+        deckAnimation(deck: playerCards)
         
         warning.layer.cornerRadius = 15
         warning.clipsToBounds = true
         
+        stay.layer.cornerRadius = stay.bounds.width / 2
+        stay.clipsToBounds = true
+        
+        reload.layer.cornerRadius = reload.bounds.width / 2
+        reload.clipsToBounds = true
         
         createCard(deck: tableCards, back: "mesa", turn: 1)
         createCard(deck: playerCards, back: "jugador", turn: 2)
@@ -70,16 +83,16 @@ class ViewController: UIViewController, OnTapDelegate {
             
             if cardsManager.playerScore == 21 {
                 warning.text = "Ganó el jugador"
-                warning.isHidden = false
+                showLabel()
                 
             } else if cardsManager.playerScore > 21 {
                 warning.text = "Ganó la mesa"
-                warning.isHidden = false
+                showLabel()
             }
             
         } else {
             warning.text = "No puedes tocar esta carta"
-            warning.isHidden = false
+            showLabel()
         }
         
         //checking if playerCards has it´s all elements revealed
@@ -216,6 +229,20 @@ class ViewController: UIViewController, OnTapDelegate {
                         }
         },
                        completion: nil)
+    }
+    
+    func deckAnimation(deck: [CardView]) {
+
+            for index in 0...deck.count-1 {
+                deck[index].frame.origin.x -= self.view.frame.width * CGFloat(index+1) //movemos al objeto a la izquierda
+                //instanciamos animator
+                self.animator = UIViewPropertyAnimator(duration: 2, curve: .easeOut, animations:
+                    { ()->Void in
+                        deck[index].frame.origin.x += self.view.frame.width * CGFloat(index+1) //moviendo a posicion correcta
+                })
+                
+                self.animator.startAnimation()
+            }
     }
     
 }
