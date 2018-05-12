@@ -9,6 +9,7 @@
 import Foundation
 import Darwin
 
+//card object
 class Card {
     var back: String
     var palo: String
@@ -16,38 +17,38 @@ class Card {
     var turn: Int
     var actualTurn: Int
     var	faceUp: Bool
-    var enable: Bool //
+    var enable: Bool
     
-    init(palo: String, number: Int, back: String, turn: Int, faceUp: Bool, enable: Bool) { //
+    init(palo: String, number: Int, back: String, turn: Int, faceUp: Bool, enable: Bool) {
         self.palo = palo
         self.number = number
         self.back = back
         self.turn = turn
         self.actualTurn = 2
         self.faceUp = faceUp
-        self.enable = enable //
+        self.enable = enable
     }
 
 }
 
+//a struct that works as a manager of the game
 struct CardsManager {
     var playerScore: Int = 0
     var tableScore: Int = 0
-    
     var actualTurn: Int = 2
     
-    mutating func calculateScore(score: Int, turn: Int) {
+    //calculate score for player and machine
+    mutating func calculateScore(score: Int, turn: Int) -> [Int] {
         if turn == 2 {
             playerScore += score
         } else {
             tableScore += score
         }
         
-        print("score")
-        print(tableScore)
-        print(playerScore)
+        return [tableScore, playerScore]
     }
     
+    //change turn of the game
     mutating func changeTurn() -> Int {
         if actualTurn == 2 {
             actualTurn = 1

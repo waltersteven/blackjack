@@ -51,6 +51,8 @@ class CardView: UIView {
             }
         }
     }
+    
+    //a function that set the back image of each card
     func drawBack(){
         if let back = back, let image = UIImage(named: back){
             let height = image.cgImage!.height
@@ -72,6 +74,7 @@ class CardView: UIView {
         
     }
     
+    //a function that set the front image of each card
     func drawCard() {
         if let palo = palo, let image = UIImage(named: palo){
             let height = image.cgImage!.height
@@ -95,6 +98,7 @@ class CardView: UIView {
         drawNumber(region: "down")
    }
     
+    //a function that draws the number of each card (since each card is a template)
     func drawNumber(region: String) {
         
         let numberLabel: UILabel
@@ -122,6 +126,7 @@ class CardView: UIView {
     
     }
     
+    //an objective c function that works as a selector on an on tap gesture
     @objc private func onTap(_ gestureRecognizer: UIGestureRecognizer) {
         if let delegate = onTapDelegate {
             if faceUp == false { //para no volver a voltearlo
