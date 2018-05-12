@@ -21,6 +21,7 @@ class CardView: UIView {
     var turn: Int?
     var actualTurn: Int?
     var onTapDelegate: OnTapDelegate?
+    var enable: Bool? //
     var faceUp : Bool? {
         didSet {
             for view in self.subviews {
@@ -124,11 +125,11 @@ class CardView: UIView {
     @objc private func onTap(_ gestureRecognizer: UIGestureRecognizer) {
         if let delegate = onTapDelegate {
             if faceUp == false { //para no volver a voltearlo
-                if self.turn! == self.actualTurn! { // validando el turno
+                if self.turn! == self.actualTurn! && self.enable! == true { // validando el turno
                     faceUp = !faceUp!
                 }
                 if let turn = self.turn, let num = self.number {
-                    delegate.onTapDelegate(validTap: turn == self.actualTurn!,score: num, turn: turn)
+                    delegate.onTapDelegate(validTap: turn == self.actualTurn! && self.enable! == true,score: num, turn: turn)
                 }
             }
         }

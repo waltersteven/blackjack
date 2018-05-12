@@ -15,15 +15,17 @@ class Card {
     var number : Int
     var turn: Int
     var actualTurn: Int
-    var	 faceUp: Bool
+    var	faceUp: Bool
+    var enable: Bool //
     
-    init(palo: String, number: Int, back: String, turn: Int, faceUp: Bool) {
+    init(palo: String, number: Int, back: String, turn: Int, faceUp: Bool, enable: Bool) { //
         self.palo = palo
         self.number = number
         self.back = back
         self.turn = turn
         self.actualTurn = 2
         self.faceUp = faceUp
+        self.enable = enable //
     }
 
 }

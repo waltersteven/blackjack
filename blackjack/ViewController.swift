@@ -88,27 +88,18 @@ class ViewController: UIViewController, OnTapDelegate {
             warning.isHidden = true
             cardsManager.calculateScore(score: score, turn: turn)
             
+            print("en playerScore: " + String(cardsManager.playerScore) )
             if cardsManager.playerScore == 21 {
+                
                 warning.text = "Ganó el jugador"
                 showLabel()
                 changeTurnInAllCards()
-                
-                for card in tableCards {
-                    if card.faceUp == false {
-                        card.faceUp = true
-                    }
-                }
                 
             } else if cardsManager.playerScore > 21 {
                 warning.text = "Ganó la mesa"
                 showLabel()
                 changeTurnInAllCards()
                 
-                for card in tableCards {
-                    if card.faceUp == false {
-                        card.faceUp = true
-                    }
-                }
             }
             
         } else {
@@ -118,35 +109,45 @@ class ViewController: UIViewController, OnTapDelegate {
         
         //checking if playerCards has it´s all elements revealed
         let fullTaps = playerCards.contains { $0.faceUp == false }
-
-        if fullTaps == false {
-            for card in tableCards {
-                if card.faceUp == false {
-                    card.faceUp = true
-                    cardsManager.calculateScore(score: card.number!, turn: card.turn!)
-                    
+        
+        if cardsManager.playerScore < 21 {
+            if fullTaps == false {
+                for card in tableCards {
+                    if card.faceUp == false {
+                        card.faceUp = true
+                        cardsManager.calculateScore(score: card.number!, turn: card.turn!)
+                        
+                    }
                 }
+                calculateWinner()
+                changeTurnInAllCards()
             }
-            calculateWinner()
-            changeTurnInAllCards()
+        
         }
+        
     }
     
     func createCard(deck: [CardView], back: String, turn: Int) {
         var index = 1
         var faceUp = false
         
+        var enable = true
+        if deck == tableCards {
+            enable = false
+        }
+        
         for card in deck {
             
             faceUp = index <= 2 ? true : false
             
-            objCard = Card(palo:String(Int(arc4random_uniform(4) + 1)), number: Int(arc4random_uniform(13) + 1),back: back, turn: turn, faceUp: faceUp)
+            objCard = Card(palo:String(Int(arc4random_uniform(4) + 1)), number: Int(arc4random_uniform(13) + 1),back: back, turn: turn, faceUp: faceUp, enable: enable)
             card.palo = objCard.palo
             card.number = objCard.number
             card.back = objCard.back
             card.turn = objCard.turn
             card.actualTurn = objCard.actualTurn
             card.faceUp = objCard.faceUp
+            card.enable = objCard.enable
             card.onTapDelegate = self
             
             if card.faceUp == true {
@@ -154,6 +155,7 @@ class ViewController: UIViewController, OnTapDelegate {
             }
             index = index + 1
         }
+        
         
     }
     
