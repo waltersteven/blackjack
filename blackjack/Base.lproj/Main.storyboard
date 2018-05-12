@@ -59,7 +59,7 @@
                                 <color key="backgroundColor" red="0.94372620559999998" green="0.94372620559999998" blue="0.94372620559999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gW-fI-ns6">
-                                <rect key="frame" x="35" y="523" width="304" height="48"/>
+                                <rect key="frame" x="35" y="539" width="304" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.33725490196078434" green="0.25882352941176467" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>

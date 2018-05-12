@@ -34,7 +34,11 @@ class ViewController: UIViewController, OnTapDelegate {
         createCard(deck: tableCards, back: "mesa", turn: 1)
         createCard(deck: playerCards, back: "jugador", turn: 2)
         
-        initialChecking()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            // code with delay
+            self.initialChecking()
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -55,7 +59,10 @@ class ViewController: UIViewController, OnTapDelegate {
         createCard(deck: tableCards, back: "mesa", turn: 1)
         createCard(deck: playerCards, back: "jugador", turn: 2)
         
-        initialChecking()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            // code with delay
+            self.initialChecking()
+        }
     }
     
     @IBAction func stayButton(_ sender: UIButton) {
@@ -84,10 +91,24 @@ class ViewController: UIViewController, OnTapDelegate {
             if cardsManager.playerScore == 21 {
                 warning.text = "Ganó el jugador"
                 showLabel()
+                changeTurnInAllCards()
+                
+                for card in tableCards {
+                    if card.faceUp == false {
+                        card.faceUp = true
+                    }
+                }
                 
             } else if cardsManager.playerScore > 21 {
                 warning.text = "Ganó la mesa"
                 showLabel()
+                changeTurnInAllCards()
+                
+                for card in tableCards {
+                    if card.faceUp == false {
+                        card.faceUp = true
+                    }
+                }
             }
             
         } else {
@@ -165,7 +186,7 @@ class ViewController: UIViewController, OnTapDelegate {
             }
             
         } else {
-            warning.text = "resultado no validado (ninguno ganó)"
+            warning.text = "Los dos volaron"
             showLabel()
         }
         
